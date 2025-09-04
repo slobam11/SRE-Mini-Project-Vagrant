@@ -9,10 +9,6 @@ The goal is to have a fully automated environment with a single `vagrant up`.
 
 1. Host OS (Windows/Linux/macOS)
 2. Vagrant + VirtualBox → Ubuntu 22.04 VM
-3. Docker engine + Minikube + kubectl + helm
-4. NGINX app deployed on Kubernetes
-5. Monitoring via **kube-prometheus-stack** (Prometheus + Grafana)
-
 ---
 
 ## Prerequisites
@@ -39,4 +35,5 @@ vagrant ssh
 
 # Check Kubernetes resources
 cd /vagrant
+
 make status
