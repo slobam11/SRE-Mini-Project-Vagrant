@@ -1,13 +1,13 @@
-## Vagrant environment
+ Vagrant environment
 
 This project uses Vagrant to spin up a reproducible Ubuntu 22.04 VM for local SRE labs (Docker, Minikube, etc.).
 
-### Prereqs
+ Prereqs
 - VirtualBox (latest)
 - Vagrant (2.3+)
 - ~6 GB RAM and 4 vCPUs free on the host
 
-### Vagrantfile (used by `vagrant up`)
+ Vagrantfile (used by `vagrant up`)
 ```ruby
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/jammy64"      # Ubuntu 22.04 base image
